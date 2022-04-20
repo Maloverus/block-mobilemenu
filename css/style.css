@@ -2,7 +2,7 @@
   font-family: "TT Lakes Regular";
   src: url("../fonts/TTLakes-Regular.eot");
   src: url("../fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.ttf") format("truetype");
+  url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
   font-family: "TT Lakes Bold";
   src: url("../fonts/TTLakes-Bold.eot");
   src: url("../fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTLakes-Bold.woff") format("woff"),
-    url("../fonts/TTLakes-Bold.ttf") format("truetype");
+  url("../fonts/TTLakes-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -43,7 +43,7 @@ body {
   width: 320px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
 }
 
 /* site-header */
@@ -97,7 +97,7 @@ body {
 }
 
 .site-nav a:hover {
-  background: url(/icon/main/highlight.svg) no-repeat;
+  background: url(../icon/main/highlight.svg) no-repeat;
   padding: 0 0 0 24px;
   filter: opacity(70%);
   transition: 0.2s;
@@ -115,7 +115,7 @@ body {
 }
 
 .mail {
-  margin: 0 12px 0 0;
+  margin: 0 0 12px 0;
 }
 
 .phone {
@@ -130,6 +130,14 @@ body {
   margin: 0 0 32px 0;
 }
 
-.switch-language a:hover {
-  color: #7e7e82;
+.switch-language__btn {
+  font-family: 'TT Lakes Regular';
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  margin: 0 7px 0 0;
+}
+
+.switch-language__btn:hover {
+  color: #7E7E82;
 }
